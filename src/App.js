@@ -8,7 +8,7 @@ function App() {
   const [ipregionName,setipRegionName] = useState('');
   const [ipIsp,setipIsp] = useState('');
   const getIp = () => {
-    axios.get('http://ip-api.com/json/').then((response) =>
+    axios.get('http://ip-api.com/json').then((response) =>
     {
       const data = response.data;
       console.log(data);
